@@ -1,13 +1,13 @@
 ---
+- name: send configuration commands to IOS
   hosts: all
   gather_facts: no
-  tasks:
-   ansible.netcommon.telnet:
-    port: 37125
-    login_prompt: 'Username: '
-    prompts:
+  ansible.netcommon.telnet:
+   port: 37125
+   login_prompt: 'Username: '
+   prompts:
      - '[>#]'
-    command:
+   command:
      - terminal length 0
      - configure terminal
      - hostname ios01

@@ -8,8 +8,8 @@
        port: 37125
        login_prompt: 'Username: '
        prompts:
-       - '[>#]'
+        - '[>#]'
        command:
-       - terminal length 0
-       - configure terminal
-       - hostname ios01
+        - terminal length 0
+        - configure terminal
+        - hostname ios01

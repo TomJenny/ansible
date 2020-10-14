@@ -1,12 +1,12 @@
 ---
-  gather_facts: no
-  ansible.netcommon.telnet:
-   host: 113.161.103.57
-   port: 37125
-   login_prompt: 'Username: '
-   prompts:
-     - '[>#]'
-   command:
-     - terminal length 0
-     - configure terminal
-     - hostname ios01
+  collections:
+   ansible.netcommon.telnet:
+    host: 113.161.103.57
+    port: 37125
+    login_prompt: 'Username: '
+    prompts:
+      - '[>#]'
+    command:
+      - terminal length 0
+      - configure terminal
+      - hostname ios01

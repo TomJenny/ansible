@@ -1,5 +1,6 @@
 ---
 - name: abc
+  gather_facts: no
   tasks:
    ansible.netcommon.telnet:
     host: 113.161.103.57

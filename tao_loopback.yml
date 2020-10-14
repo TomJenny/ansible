@@ -5,7 +5,7 @@
 
   tasks:
     - name: Create loopback
-      ios_13_interface:
+      ios_l3_interface:
         ipv4: "{{ item.number }}"
         name: "{{ item.name }}"
       with_items:

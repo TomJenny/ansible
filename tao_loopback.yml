@@ -4,6 +4,12 @@
   gather_facts: no
 
   tasks:
+    - name: remove loopback
+      ios_config:
+        lines:
+          - no int loopback 1
+          - no int loopback 2
+          - no int loopback 3
     - name: Create loopback
       ios_l3_interface:
         ipv4: "{{ item.number }}/24"

@@ -7,7 +7,7 @@
     - name: Create loopback
       ios_l3_interface:
         ipv4: {{ item.number }}/24
-        name: "{{ item.name }}"
+        name: loopback {{ item.name }}
       with_items:
         - { number: "10.0.1.1", name: 1 }
         - { number: "10.0.1.2", name: 2 }

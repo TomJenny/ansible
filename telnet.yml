@@ -1,5 +1,4 @@
 ---
-- name: telnet den thiet bi
   hosts: all
   gather_facts: no
   tasks:

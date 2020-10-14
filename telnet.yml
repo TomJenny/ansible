@@ -1,5 +1,3 @@
----
-- name: send configuration commands to IOS
   hosts: all
   gather_facts: no
   ansible.netcommon.telnet:

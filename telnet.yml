@@ -1,0 +1,15 @@
+---
+- name: telnet den thiet bi
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: telnet den thiet bi 2
+      ansible.netcommon.telnet:
+       port: 37125
+       login_prompt: 'Username: '
+       prompts:
+       - '[>#]'
+       command:
+       - terminal length 0
+       - configure terminal
+       - hostname ios01
